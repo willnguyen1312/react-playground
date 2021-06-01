@@ -1,25 +1,24 @@
-import React, { useState } from 'react'
-import {useCookie} from 'react-use'
-import logo from './logo.svg'
-import './App.css'
+import React, { useState } from "react";
+import { useCookie } from "react-use";
+import logo from "./logo.svg";
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
-  let _value: any = 0
-  if (count ===0) {
+  let _value: any = 0;
+  if (count === 0) {
     let [value, updateCookie, deleteCookie] = useCookie("my-cookie");
-    _value = +(value || 0)
+    _value = +(value || 0);
   }
 
   console.log(_value);
-  
 
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello Vite + React!</p>
+        <p>Hello Vite + React!!!</p>
         <p>
           <button onClick={() => setCount((count) => count + 1)}>
             count is: {count}
@@ -37,7 +36,7 @@ function App() {
           >
             Learn React
           </a>
-          {' | '}
+          {" | "}
           <a
             className="App-link"
             href="https://vitejs.dev/guide/features.html"
@@ -49,7 +48,7 @@ function App() {
         </p>
       </header>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

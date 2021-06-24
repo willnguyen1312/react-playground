@@ -1,37 +1,35 @@
 import React from "react";
 
-interface CommonProps {
-  children: React.ReactNode;
+interface TruncatedProps {
+  textMode?: "on";
+  text: string;
 }
 
-interface TruncatedProps extends CommonProps {
-  truncate?: "on";
-  expanded?: boolean;
+interface NoTruncatedProps {
+  textMode?: "off";
 }
 
-interface NoTruncatedProps extends CommonProps {
-  truncate?: "off";
-}
-
-interface TextProps extends CommonProps {
-  truncate?: "on" | "off";
-  expanded?: boolean;
+interface TextProps {
+  textMode?: "on" | "off";
+  text?: string;
 }
 
 function Text(props: NoTruncatedProps): JSX.Element;
 function Text(props: TruncatedProps): JSX.Element;
 
-function Text(props: TextProps) {
-  const { children, truncate, expanded } = props;
-  const className = truncate ? "u-text-truncate" : "";
+function Text({ text, textMode }: TextProps): JSX.Element {
+  if (textMode === "on") {
+    return <div>ON with {text}</div>;
+  }
 
-  return (
-    <div className={className} aria-expanded={!!expanded}>
-      {children}
-    </div>
-  );
+  return <div>OFF</div>;
 }
 
 export const Sample = () => {
-  return <Text truncate="off">Hello there</Text>;
+  return (
+    <>
+      <Text textMode="off" />
+      <Text textMode="on" text="Aha" />
+    </>
+  );
 };

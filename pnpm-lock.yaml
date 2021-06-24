@@ -1,28 +1,28 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@types/react': ^17.0.8
-  '@types/react-dom': ^17.0.5
-  '@vitejs/plugin-legacy': ^1.4.1
+  '@types/react': ^17.0.11
+  '@types/react-dom': ^17.0.8
+  '@vitejs/plugin-legacy': ^1.4.2
   '@vitejs/plugin-react-refresh': ^1.3.3
   react: ^17.0.2
   react-dom: ^17.0.2
   react-use: ^17.2.4
-  typescript: ^4.3.2
-  vite: ^2.3.5
+  typescript: ^4.3.4
+  vite: ^2.3.8
 
 dependencies:
-  '@vitejs/plugin-legacy': 1.4.1_vite@2.3.5
+  '@vitejs/plugin-legacy': 1.4.2_vite@2.3.8
   react: 17.0.2
   react-dom: 17.0.2_react@17.0.2
   react-use: 17.2.4_react-dom@17.0.2+react@17.0.2
 
 devDependencies:
-  '@types/react': 17.0.8
-  '@types/react-dom': 17.0.5
+  '@types/react': 17.0.11
+  '@types/react-dom': 17.0.8
   '@vitejs/plugin-react-refresh': 1.3.3
-  typescript: 4.3.2
-  vite: 2.3.5
+  typescript: 4.3.4
+  vite: 2.3.8
 
 packages:
 
@@ -209,8 +209,9 @@ packages:
       regenerator-runtime: 0.13.7
     dev: false
 
-  /@babel/standalone/7.14.4:
-    resolution: {integrity: sha512-oBvBtSdACtNeH2YAg2kyZhfbqfKQK7lgudfHo8IC03JiBrfuvvMlfkBaSrqxrpf9DmUCZJnDZH3uLNVN5QoXog==}
+  /@babel/standalone/7.14.7:
+    resolution: {integrity: sha512-7RlfMPR4604SbYpj5zvs2ZK587hVhixgU9Pd9Vs8lB8KYtT3U0apXSf0vZXhy8XRh549eUmJOHXhWKTO3ObzOQ==}
+    engines: {node: '>=6.9.0'}
     dev: false
 
   /@babel/template/7.12.13:
@@ -251,14 +252,14 @@ packages:
     resolution: {integrity: sha512-KfRL3PuHmqQLOG+2tGpRO26Ctg+Cq1E01D2DMriKEATHgWLfeNDmq9e29Q9WIky0dQ3NPkd1mzYH8Lm936Z9qw==}
     dev: true
 
-  /@types/react-dom/17.0.5:
-    resolution: {integrity: sha512-ikqukEhH4H9gr4iJCmQVNzTB307kROe3XFfHAOTxOXPOw7lAoEXnM5KWTkzeANGL5Ce6ABfiMl/zJBYNi7ObmQ==}
+  /@types/react-dom/17.0.8:
+    resolution: {integrity: sha512-0ohAiJAx1DAUEcY9UopnfwCE9sSMDGnY/oXjWMax6g3RpzmTt2GMyMVAXcbn0mo8XAff0SbQJl2/SBU+hjSZ1A==}
     dependencies:
-      '@types/react': 17.0.8
+      '@types/react': 17.0.11
     dev: true
 
-  /@types/react/17.0.8:
-    resolution: {integrity: sha512-3sx4c0PbXujrYAKwXxNONXUtRp9C+hE2di0IuxFyf5BELD+B+AXL8G7QrmSKhVwKZDbv0igiAjQAMhXj8Yg3aw==}
+  /@types/react/17.0.11:
+    resolution: {integrity: sha512-yFRQbD+whVonItSk7ZzP/L+gPTJVBkL/7shLEF+i9GC/1cV3JmUxEQz6+9ylhUpWSDuqo1N9qEvqS6vTj4USUA==}
     dependencies:
       '@types/prop-types': 15.7.3
       '@types/scheduler': 0.16.1
@@ -269,18 +270,18 @@ packages:
     resolution: {integrity: sha512-EaCxbanVeyxDRTQBkdLb3Bvl/HK7PBK6UJjsSixB0iHKoWxE5uu2Q/DgtpOhPIojN0Zl1whvOd7PoHs2P0s5eA==}
     dev: true
 
-  /@vitejs/plugin-legacy/1.4.1_vite@2.3.5:
-    resolution: {integrity: sha512-xfcBaNYpPCFzDjvhvoUYOGh87SNvvJNmrHtRdAe6lmnmSOgMYW+QNOvWwdHFEUpWaWUGtgeyYfcVN024IgBafA==}
+  /@vitejs/plugin-legacy/1.4.2_vite@2.3.8:
+    resolution: {integrity: sha512-D2ADBSpImP0QT8w9Eo+8KKOLg3I8OQhFwuBXGM8WQCRrEs55E3bCf9PTkL8S+tgliyLbJM+gjemxpRuoTTwphA==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
       vite: ^2.0.0
     dependencies:
-      '@babel/standalone': 7.14.4
-      core-js: 3.13.1
+      '@babel/standalone': 7.14.7
+      core-js: 3.15.1
       magic-string: 0.25.7
       regenerator-runtime: 0.13.7
-      systemjs: 6.9.0
-      vite: 2.3.5
+      systemjs: 6.10.1
+      vite: 2.3.8
     dev: false
 
   /@vitejs/plugin-react-refresh/1.3.3:
@@ -357,8 +358,8 @@ packages:
       toggle-selection: 1.0.6
     dev: false
 
-  /core-js/3.13.1:
-    resolution: {integrity: sha512-JqveUc4igkqwStL2RTRn/EPFGBOfEZHxJl/8ej1mXJR75V3go2mFF4bmUYkEIT1rveHKnkUlcJX/c+f1TyIovQ==}
+  /core-js/3.15.1:
+    resolution: {integrity: sha512-h8VbZYnc9pDzueiS2610IULDkpFFPunHwIpl8yRwFahAEEdSpHlTy3h3z3rKq5h11CaUdBEeRViu9AYvbxiMeg==}
     requiresBuild: true
     dev: false
 
@@ -402,8 +403,8 @@ packages:
       stackframe: 1.2.0
     dev: false
 
-  /esbuild/0.12.5:
-    resolution: {integrity: sha512-vcuP53pA5XiwUU4FnlXM+2PnVjTfHGthM7uP1gtp+9yfheGvFFbq/KyuESThmtoHPUrfZH5JpxGVJIFDVD1Egw==}
+  /esbuild/0.12.9:
+    resolution: {integrity: sha512-MWRhAbMOJ9RJygCrt778rz/qNYgA4ZVj6aXnNPxFjs7PmIpb0fuB9Gmg5uWrr6n++XKwwm/RmSz6RR5JL2Ocsw==}
     hasBin: true
     requiresBuild: true
     dev: true
@@ -567,8 +568,8 @@ packages:
     resolution: {integrity: sha512-LDJzPVEEEPR+y48z93A0Ed0yXb8pAByGWo/k5YYdYgpY2/2EsOsksJrq7lOHxryrVOn1ejG6oAp8ahvOIQD8sw==}
     dev: true
 
-  /postcss/8.3.0:
-    resolution: {integrity: sha512-+ogXpdAjWGa+fdYY5BQ96V/6tAo+TdSSIMP5huJBIygdWwKtVoB5JWZ7yUd4xZ8r+8Kvvx4nyg/PQ071H4UtcQ==}
+  /postcss/8.3.5:
+    resolution: {integrity: sha512-NxTuJocUhYGsMiMFHDUkmjSKT3EdH4/WbGF6GCi1NDGk+vbcUTun4fpbOqaPtD8IIsztA2ilZm2DhYCuyN58gA==}
     engines: {node: ^10 || ^12 || >=14}
     dependencies:
       colorette: 1.2.2
@@ -749,8 +750,8 @@ packages:
       has-flag: 3.0.0
     dev: true
 
-  /systemjs/6.9.0:
-    resolution: {integrity: sha512-THLzcb7WzoW0I+tHB4PQge0BqqN+CAUQJ9gPc1MieqD1gnhxNUKYrhRlN5ov94saOYVVR5NZFQqQhnxi9/WEGg==}
+  /systemjs/6.10.1:
+    resolution: {integrity: sha512-i2HiBOTIsm4GpjpiDHqTscZ/78htyTtdhpcbY2XPbIpsaNDIBA9vtxwIl8kSSnIRO0Zn7SHqvvILu3cMoXQuYw==}
     dev: false
 
   /throttle-debounce/3.0.1:
@@ -775,19 +776,19 @@ packages:
     resolution: {integrity: sha512-gS9GVHRU+RGn5KQM2rllAlR3dU6m7AcpJKdtH8gFvQiC4Otgk98XnmMU+nZenHt/+VhnBPWwgrJsyrdcw6i23w==}
     dev: false
 
-  /typescript/4.3.2:
-    resolution: {integrity: sha512-zZ4hShnmnoVnAHpVHWpTcxdv7dWP60S2FsydQLV8V5PbS3FifjWFFRiHSWpDJahly88PRyV5teTSLoq4eG7mKw==}
+  /typescript/4.3.4:
+    resolution: {integrity: sha512-uauPG7XZn9F/mo+7MrsRjyvbxFpzemRjKEZXS4AK83oP2KKOJPvb+9cO/gmnv8arWZvhnjVOXz7B49m1l0e9Ew==}
     engines: {node: '>=4.2.0'}
     hasBin: true
     dev: true
 
-  /vite/2.3.5:
-    resolution: {integrity: sha512-Jh3uySLlofx+t+uqznnzJFTNgeqYQLhR6xMx61VYN5KTlVirJXBPkFW2+aigHN6d1mOo6rM7DWnU6gjnudVozw==}
+  /vite/2.3.8:
+    resolution: {integrity: sha512-QiEx+iqNnJntSgSF2fWRQvRey9pORIrtNJzNyBJXwc+BdzWs83FQolX84cTBo393cfhObrtWa6180dAa4NLDiQ==}
     engines: {node: '>=12.0.0'}
     hasBin: true
     dependencies:
-      esbuild: 0.12.5
-      postcss: 8.3.0
+      esbuild: 0.12.9
+      postcss: 8.3.5
       resolve: 1.20.0
       rollup: 2.50.5
     optionalDependencies:

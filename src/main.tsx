@@ -4,7 +4,7 @@ import "./index.css";
 // import App from './App'
 // import App from "./App2";
 // import App from "./Debounce";
-import App from "./App3";
+import App from "./AppTime";
 import * as sample from "./sample";
 
 console.log(sample.HI);

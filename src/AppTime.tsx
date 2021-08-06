@@ -1,16 +1,21 @@
 import React, { useState } from "react";
 import DatePicker from "react-datepicker";
-import { setHours, setMinutes } from "date-fns";
+import { setHours, setMinutes, intervalToDuration } from "date-fns";
 import "react-datepicker/dist/react-datepicker.css";
 
 export default function App() {
-  const [startDate, setStartDate] = useState(
-    new Date("2018-01-04T01:10:54.673Z")
-  );
+  const [startDate, setStartDate] = useState(new Date());
 
   console.log(startDate);
   console.log(startDate.toUTCString());
   console.log(startDate.toISOString());
+
+  console.log(
+    intervalToDuration({
+      start: new Date(1929, 0, 15, 12, 0, 0),
+      end: new Date(1968, 3, 4, 19, 5, 0),
+    })
+  );
 
   return (
     <div

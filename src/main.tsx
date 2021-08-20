@@ -4,7 +4,8 @@ import "./index.css";
 // import App from './App'
 // import App from "./App2";
 // import App from "./Debounce";
-import App from "./AppWebWorker";
+import App from "./AppCloneElement";
+// import App from "./AppWebWorker";
 // import * as sample from "./sample";
 
 // console.log(sample.HI);

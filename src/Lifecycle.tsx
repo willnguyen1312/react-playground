@@ -16,15 +16,19 @@ export default function App() {
 
   if (value % 2) {
     return (
-      <Wrapper>
-        <button onClick={() => setValue((value) => value + 1)}>Odd</button>
-      </Wrapper>
+      <section>
+        <Wrapper>
+          <button onClick={() => setValue((value) => value + 1)}>Odd</button>
+        </Wrapper>
+      </section>
     );
   }
 
   return (
-    <Wrapper>
-      <button onClick={() => setValue((value) => value + 1)}>Even</button>
-    </Wrapper>
+    <main>
+      <Wrapper>
+        <button onClick={() => setValue((value) => value + 1)}>Even</button>
+      </Wrapper>
+    </main>
   );
 }

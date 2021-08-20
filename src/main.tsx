@@ -5,7 +5,8 @@ import "./index.css";
 // import App from "./App2";
 // import App from "./Debounce";
 // import App from "./AppCloneElement";
-import App from "./Lifecycle";
+// import App from "./Lifecycle";
+import App from "./ClipboardImage";
 // import App from "./AppWebWorker";
 // import * as sample from "./sample";
 

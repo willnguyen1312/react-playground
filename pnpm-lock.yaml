@@ -5,8 +5,8 @@ specifiers:
   '@material-ui/icons': ^4.11.2
   '@material-ui/lab': ^4.0.0-alpha.60
   '@types/lodash': ^4.14.172
-  '@types/react': ^17.0.15
-  '@types/react-datepicker': ^4.1.4
+  '@types/react': ^17.0.19
+  '@types/react-datepicker': ^4.1.5
   '@types/react-dom': ^17.0.9
   '@vitejs/plugin-legacy': ^1.5.1
   '@vitejs/plugin-react-refresh': ^1.3.6
@@ -18,17 +18,17 @@ specifiers:
   moment: ^2.29.1
   moment-timezone: ^0.5.33
   react: ^17.0.2
-  react-datepicker: ^4.1.1
+  react-datepicker: ^4.2.1
   react-dom: ^17.0.2
   react-use: ^17.2.4
-  typescript: ^4.3.5
-  vite: ^2.4.4
+  typescript: ^4.4.2
+  vite: ^2.5.1
 
 dependencies:
-  '@material-ui/core': 4.12.3_6ed7afba42f0472a9770b39da668445f
-  '@material-ui/icons': 4.11.2_f25077d05a4b33a9e930fb666eb78627
-  '@material-ui/lab': 4.0.0-alpha.60_f25077d05a4b33a9e930fb666eb78627
-  '@vitejs/plugin-legacy': 1.5.1_vite@2.4.4
+  '@material-ui/core': 4.12.3_9c6a8df88c2691f81f37725d5b4de033
+  '@material-ui/icons': 4.11.2_292fb633533f151adc8a2a8c224969dc
+  '@material-ui/lab': 4.0.0-alpha.60_292fb633533f151adc8a2a8c224969dc
+  '@vitejs/plugin-legacy': 1.5.1_vite@2.5.1
   axios: 0.21.1
   comlink: 4.3.1
   date-fns: 2.23.0
@@ -37,18 +37,18 @@ dependencies:
   moment: 2.29.1
   moment-timezone: 0.5.33
   react: 17.0.2
-  react-datepicker: 4.1.1_react-dom@17.0.2+react@17.0.2
+  react-datepicker: 4.2.1_react-dom@17.0.2+react@17.0.2
   react-dom: 17.0.2_react@17.0.2
   react-use: 17.2.4_react-dom@17.0.2+react@17.0.2
 
 devDependencies:
   '@types/lodash': 4.14.172
-  '@types/react': 17.0.15
-  '@types/react-datepicker': 4.1.4
+  '@types/react': 17.0.19
+  '@types/react-datepicker': 4.1.5_react@17.0.2
   '@types/react-dom': 17.0.9
   '@vitejs/plugin-react-refresh': 1.3.6
-  typescript: 4.3.5
-  vite: 2.4.4
+  typescript: 4.4.2
+  vite: 2.5.1
 
 packages:
 
@@ -318,7 +318,7 @@ packages:
     resolution: {integrity: sha512-kBJtf7PH6aWwZ6fka3zQ0p6SBYzx4fl1LoZXE2RrnYST9Xljm7WfKJrU4g/Xr3Beg72MLrp1AWNUmuYJTL7Cow==}
     dev: false
 
-  /@material-ui/core/4.12.3_6ed7afba42f0472a9770b39da668445f:
+  /@material-ui/core/4.12.3_9c6a8df88c2691f81f37725d5b4de033:
     resolution: {integrity: sha512-sdpgI/PL56QVsEJldwEe4FFaFTLUqN+rd7sSZiRCdx2E/C7z5yK0y/khAWVBH24tXwto7I1hCzNWfJGZIYJKnw==}
     engines: {node: '>=8.0.0'}
     peerDependencies:
@@ -330,11 +330,11 @@ packages:
         optional: true
     dependencies:
       '@babel/runtime': 7.15.3
-      '@material-ui/styles': 4.11.4_6ed7afba42f0472a9770b39da668445f
-      '@material-ui/system': 4.12.1_6ed7afba42f0472a9770b39da668445f
-      '@material-ui/types': 5.1.0_@types+react@17.0.15
+      '@material-ui/styles': 4.11.4_9c6a8df88c2691f81f37725d5b4de033
+      '@material-ui/system': 4.12.1_9c6a8df88c2691f81f37725d5b4de033
+      '@material-ui/types': 5.1.0_@types+react@17.0.19
       '@material-ui/utils': 4.11.2_react-dom@17.0.2+react@17.0.2
-      '@types/react': 17.0.15
+      '@types/react': 17.0.19
       '@types/react-transition-group': 4.4.2
       clsx: 1.1.1
       hoist-non-react-statics: 3.3.2
@@ -346,7 +346,7 @@ packages:
       react-transition-group: 4.4.2_react-dom@17.0.2+react@17.0.2
     dev: false
 
-  /@material-ui/icons/4.11.2_f25077d05a4b33a9e930fb666eb78627:
+  /@material-ui/icons/4.11.2_292fb633533f151adc8a2a8c224969dc:
     resolution: {integrity: sha512-fQNsKX2TxBmqIGJCSi3tGTO/gZ+eJgWmMJkgDiOfyNaunNaxcklJQFaFogYcFl0qFuaEz1qaXYXboa/bUXVSOQ==}
     engines: {node: '>=8.0.0'}
     peerDependencies:
@@ -359,13 +359,13 @@ packages:
         optional: true
     dependencies:
       '@babel/runtime': 7.15.3
-      '@material-ui/core': 4.12.3_6ed7afba42f0472a9770b39da668445f
-      '@types/react': 17.0.15
+      '@material-ui/core': 4.12.3_9c6a8df88c2691f81f37725d5b4de033
+      '@types/react': 17.0.19
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
     dev: false
 
-  /@material-ui/lab/4.0.0-alpha.60_f25077d05a4b33a9e930fb666eb78627:
+  /@material-ui/lab/4.0.0-alpha.60_292fb633533f151adc8a2a8c224969dc:
     resolution: {integrity: sha512-fadlYsPJF+0fx2lRuyqAuJj7hAS1tLDdIEEdov5jlrpb5pp4b+mRDUqQTUxi4inRZHS1bEXpU8QWUhO6xX88aA==}
     engines: {node: '>=8.0.0'}
     peerDependencies:
@@ -378,9 +378,9 @@ packages:
         optional: true
     dependencies:
       '@babel/runtime': 7.15.3
-      '@material-ui/core': 4.12.3_6ed7afba42f0472a9770b39da668445f
+      '@material-ui/core': 4.12.3_9c6a8df88c2691f81f37725d5b4de033
       '@material-ui/utils': 4.11.2_react-dom@17.0.2+react@17.0.2
-      '@types/react': 17.0.15
+      '@types/react': 17.0.19
       clsx: 1.1.1
       prop-types: 15.7.2
       react: 17.0.2
@@ -388,7 +388,7 @@ packages:
       react-is: 17.0.2
     dev: false
 
-  /@material-ui/styles/4.11.4_6ed7afba42f0472a9770b39da668445f:
+  /@material-ui/styles/4.11.4_9c6a8df88c2691f81f37725d5b4de033:
     resolution: {integrity: sha512-KNTIZcnj/zprG5LW0Sao7zw+yG3O35pviHzejMdcSGCdWbiO8qzRgOYL8JAxAsWBKOKYwVZxXtHWaB5T2Kvxew==}
     engines: {node: '>=8.0.0'}
     peerDependencies:
@@ -401,9 +401,9 @@ packages:
     dependencies:
       '@babel/runtime': 7.15.3
       '@emotion/hash': 0.8.0
-      '@material-ui/types': 5.1.0_@types+react@17.0.15
+      '@material-ui/types': 5.1.0_@types+react@17.0.19
       '@material-ui/utils': 4.11.2_react-dom@17.0.2+react@17.0.2
-      '@types/react': 17.0.15
+      '@types/react': 17.0.19
       clsx: 1.1.1
       csstype: 2.6.17
       hoist-non-react-statics: 3.3.2
@@ -420,7 +420,7 @@ packages:
       react-dom: 17.0.2_react@17.0.2
     dev: false
 
-  /@material-ui/system/4.12.1_6ed7afba42f0472a9770b39da668445f:
+  /@material-ui/system/4.12.1_9c6a8df88c2691f81f37725d5b4de033:
     resolution: {integrity: sha512-lUdzs4q9kEXZGhbN7BptyiS1rLNHe6kG9o8Y307HCvF4sQxbCgpL2qi+gUk+yI8a2DNk48gISEQxoxpgph0xIw==}
     engines: {node: '>=8.0.0'}
     peerDependencies:
@@ -433,14 +433,14 @@ packages:
     dependencies:
       '@babel/runtime': 7.15.3
       '@material-ui/utils': 4.11.2_react-dom@17.0.2+react@17.0.2
-      '@types/react': 17.0.15
+      '@types/react': 17.0.19
       csstype: 2.6.17
       prop-types: 15.7.2
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
     dev: false
 
-  /@material-ui/types/5.1.0_@types+react@17.0.15:
+  /@material-ui/types/5.1.0_@types+react@17.0.19:
     resolution: {integrity: sha512-7cqRjrY50b8QzRSYyhSpx4WRw2YuO0KKIGQEVk5J8uoz2BanawykgZGoWEqKm7pVIbzFDN0SpPcVV4IhOFkl8A==}
     peerDependencies:
       '@types/react': '*'
@@ -448,7 +448,7 @@ packages:
       '@types/react':
         optional: true
     dependencies:
-      '@types/react': 17.0.15
+      '@types/react': 17.0.19
     dev: false
 
   /@material-ui/utils/4.11.2_react-dom@17.0.2+react@17.0.2:
@@ -490,14 +490,16 @@ packages:
 
   /@types/prop-types/15.7.4:
     resolution: {integrity: sha512-rZ5drC/jWjrArrS8BR6SIr4cWpW09RNTYt9AMZo3Jwwif+iacXAqgVjm0B0Bv/S1jhDXKHqRVNCbACkJ89RAnQ==}
-    dev: false
 
-  /@types/react-datepicker/4.1.4:
-    resolution: {integrity: sha512-7M+rLLRVIq4tnrupI/wZn8BQEVIawjVItsOQGgZTYE/L9oTJ9rzmu4im6BNr5meWehXvNWbM4DOeuciaz6exWg==}
+  /@types/react-datepicker/4.1.5_react@17.0.2:
+    resolution: {integrity: sha512-KGejyyCiFhBXjHp4AmuzO4W4pfWV9PYFZrBTA56tsuy+jpqQ2Jdx7j44onYomeUSv2B2uqT3OCkOh+dOI8Fy3g==}
     dependencies:
       '@popperjs/core': 2.9.3
-      '@types/react': 17.0.14
+      '@types/react': 17.0.19
       date-fns: 2.23.0
+      react-popper: 2.2.5_79d2345123b2a187d5f9cef19367e432
+    transitivePeerDependencies:
+      - react
     dev: true
 
   /@types/react-dom/17.0.9:
@@ -520,21 +522,12 @@ packages:
       csstype: 3.0.8
     dev: true
 
-  /@types/react/17.0.15:
-    resolution: {integrity: sha512-uTKHDK9STXFHLaKv6IMnwp52fm0hwU+N89w/p9grdUqcFA6WuqDyPhaWopbNyE1k/VhgzmHl8pu1L4wITtmlLw==}
-    dependencies:
-      '@types/prop-types': 15.7.3
-      '@types/scheduler': 0.16.1
-      csstype: 3.0.8
-    dev: true
-
   /@types/react/17.0.19:
     resolution: {integrity: sha512-sX1HisdB1/ZESixMTGnMxH9TDe8Sk709734fEQZzCV/4lSu9kJCPbo2PbTRoZM+53Pp0P10hYVyReUueGwUi4A==}
     dependencies:
       '@types/prop-types': 15.7.4
       '@types/scheduler': 0.16.2
       csstype: 3.0.8
-    dev: false
 
   /@types/scheduler/0.16.1:
     resolution: {integrity: sha512-EaCxbanVeyxDRTQBkdLb3Bvl/HK7PBK6UJjsSixB0iHKoWxE5uu2Q/DgtpOhPIojN0Zl1whvOd7PoHs2P0s5eA==}
@@ -542,9 +535,8 @@ packages:
 
   /@types/scheduler/0.16.2:
     resolution: {integrity: sha512-hppQEBDmlwhFAXKJX2KnWLYu5yMfi91yazPb2l+lbJiwW+wdo1gNeRA+3RgNSO39WYX2euey41KEwnqesU2Jew==}
-    dev: false
 
-  /@vitejs/plugin-legacy/1.5.1_vite@2.4.4:
+  /@vitejs/plugin-legacy/1.5.1_vite@2.5.1:
     resolution: {integrity: sha512-g+0iy0X3NJRUSKZK+OCeSxNWnCuuE/6lsmr2WLWPOEt1vp6LdfHuNCYRooCm6s0ccTZ/SiumVk8vt9DWSYs+8A==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
@@ -555,7 +547,7 @@ packages:
       magic-string: 0.25.7
       regenerator-runtime: 0.13.9
       systemjs: 6.10.2
-      vite: 2.4.4
+      vite: 2.5.1
     dev: false
 
   /@vitejs/plugin-react-refresh/1.3.6:
@@ -729,8 +721,8 @@ packages:
       stackframe: 1.2.0
     dev: false
 
-  /esbuild/0.12.9:
-    resolution: {integrity: sha512-MWRhAbMOJ9RJygCrt778rz/qNYgA4ZVj6aXnNPxFjs7PmIpb0fuB9Gmg5uWrr6n++XKwwm/RmSz6RR5JL2Ocsw==}
+  /esbuild/0.12.24:
+    resolution: {integrity: sha512-C0ibY+HsXzYB6L/pLWEiWjMpghKsIc58Q5yumARwBQsHl9DXPakW+5NI/Y9w4YXiz0PEP6XTGTT/OV4Nnsmb4A==}
     hasBin: true
     requiresBuild: true
     dev: true
@@ -927,7 +919,6 @@ packages:
     hasBin: true
     dependencies:
       js-tokens: 4.0.0
-    dev: false
 
   /magic-string/0.25.7:
     resolution: {integrity: sha512-4CrMT5DOHTDk4HYDlzmwu4FVCcIYI8gauveasrdCu2IKIFOJ3f0v/8MDGJCDL9oD2ppz/Av1b0Nj345H9M+XIA==}
@@ -1020,8 +1011,8 @@ packages:
       react-is: 16.13.1
     dev: false
 
-  /react-datepicker/4.1.1_react-dom@17.0.2+react@17.0.2:
-    resolution: {integrity: sha512-vtZIA7MbUrffRw1CHiyOGtmTO/tTdZGr5BYaiRucHMTb6rCqA8TkaQhzX6tTwMwP8vV38Khv4UWohrJbiX1rMw==}
+  /react-datepicker/4.2.1_react-dom@17.0.2+react@17.0.2:
+    resolution: {integrity: sha512-0gcvHMnX8rS1fV90PjjsB7MQdsWNU77JeVHf6bbwK9HnFxgwjVflTx40ebKmHV+leqe+f+FgUP9Nvqbe5RGyfA==}
     peerDependencies:
       react: ^16.9.0 || ^17
       react-dom: ^16.9.0 || ^17
@@ -1049,7 +1040,6 @@ packages:
 
   /react-fast-compare/3.2.0:
     resolution: {integrity: sha512-rtGImPZ0YyLrscKI9xTpV8psd6I8VAtjKCzQDlzyDvqJA8XOW78TXYQwNRNd8g8JZnDu8q9Fu/1v4HPAVwVdHA==}
-    dev: false
 
   /react-is/16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
@@ -1079,7 +1069,6 @@ packages:
       react: 17.0.2
       react-fast-compare: 3.2.0
       warning: 4.0.3
-    dev: false
 
   /react-refresh/0.10.0:
     resolution: {integrity: sha512-PgidR3wST3dDYKr6b4pJoqQFpPGNKDSCDx4cZoshjXipw3LzO7mG1My2pwEzz2JVkF+inx3xRpDeQLFQGH/hsQ==}
@@ -1291,18 +1280,18 @@ packages:
     resolution: {integrity: sha512-N82ooyxVNm6h1riLCoyS9e3fuJ3AMG2zIZs2Gd1ATcSFjSA23Q0fzjjZeh0jbJvWVDZ0cJT8yaNNaaXHzueNjg==}
     dev: false
 
-  /typescript/4.3.5:
-    resolution: {integrity: sha512-DqQgihaQ9cUrskJo9kIyW/+g0Vxsk8cDtZ52a3NGh0YNTfpUSArXSohyUGnvbPazEPLu398C0UxmKSOrPumUzA==}
+  /typescript/4.4.2:
+    resolution: {integrity: sha512-gzP+t5W4hdy4c+68bfcv0t400HVJMMd2+H9B7gae1nQlBzCqvrXX+6GL/b3GAgyTH966pzrZ70/fRjwAtZksSQ==}
     engines: {node: '>=4.2.0'}
     hasBin: true
     dev: true
 
-  /vite/2.4.4:
-    resolution: {integrity: sha512-m1wK6pFJKmaYA6AeZIUXyiAgUAAJzVXhIMYCdZUpCaFMGps0v0IlNJtbmPvkUhVEyautalajmnW5X6NboUPsnw==}
-    engines: {node: '>=12.0.0'}
+  /vite/2.5.1:
+    resolution: {integrity: sha512-FwmLbbz8MB1pBs9dKoRDgpiqoijif8hSK1+NNUYc12/cnf+pM2UFhhQ1rcpXgbMhm/5c2USZdVAf0FSkSxaFDA==}
+    engines: {node: '>=12.2.0'}
     hasBin: true
     dependencies:
-      esbuild: 0.12.9
+      esbuild: 0.12.24
       postcss: 8.3.6
       resolve: 1.20.0
       rollup: 2.50.5
@@ -1314,4 +1303,3 @@ packages:
     resolution: {integrity: sha512-rpJyN222KWIvHJ/F53XSZv0Zl/accqHR8et1kpaMTD/fLCRxtV8iX8czMzY7sVZupTI3zcUTg8eycS2kNF9l6w==}
     dependencies:
       loose-envify: 1.4.0
-    dev: false

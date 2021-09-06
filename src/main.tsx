@@ -7,11 +7,11 @@ import "./index.css";
 // import App from "./AppCloneElement";
 // import App from "./Lifecycle";
 // import App from "./Fetch";
-import App from "./Effect";
+import App, { Messages } from "./Effect";
 // import App from "./AppWebWorker";
 // import * as sample from "./sample";
 
-// console.log(sample.HI);
+console.log(Messages.First);
 
 ReactDOM.render(
   <React.StrictMode>

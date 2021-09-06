@@ -1,5 +1,12 @@
 import React, { useEffect, useReducer } from "react";
 
+export const enum Messages {
+  First = "first",
+  Second = "second",
+}
+
+console.log(Messages.Second);
+
 export default function App() {
   const [value, rerender] = useReducer((a) => !a, true);
 

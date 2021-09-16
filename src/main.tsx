@@ -7,16 +7,17 @@ import "./index.css";
 // import App from "./AppCloneElement";
 // import App from "./Lifecycle";
 // import App from "./Fetch";
-import App from "./Effect";
+// import App from "./Effect";
+import App from "./AppChildren";
 // import App from "./AppWebWorker";
 // import * as sample from "./sample";
 
-const FormFields = {
-  First: "firstName2",
-  Last: "lastName2",
-} as const;
+// const FormFields = {
+//   First: "firstName2",
+//   Last: "lastName2",
+// } as const;
 
-console.log(FormFields.First);
+// console.log(FormFields.First);
 
 ReactDOM.render(
   <React.StrictMode>

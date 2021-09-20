@@ -9,7 +9,8 @@ import "./index.css";
 // import App from "./Fetch";
 // import App from "./Effect";
 // import App from "./AppChildren";
-import App from "./AppMemo";
+// import App from "./AppMemo";
+import App from "./AppVideo";
 // import App from "./AppWebWorker";
 // import * as sample from "./sample";
 

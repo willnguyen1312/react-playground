@@ -19,7 +19,7 @@ type Post = {
 
 function Example() {
   const queryClient = useQueryClient();
-  const response = useQuery<Post[]>(["post"], () => {
+  const response = useQuery<Post[]>(["post", { a: 1, b: 2 }], () => {
     return fetch("https://jsonplaceholder.typicode.com/posts").then((res) =>
       res.json()
     );
@@ -37,7 +37,7 @@ function Example() {
       <button
         onClick={async () => {
           const result = await mutation.mutateAsync();
-          queryClient.invalidateQueries("post");
+          queryClient.invalidateQueries(["post", { b: 2 }]);
         }}
       >
         Post stuff

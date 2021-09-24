@@ -8,7 +8,13 @@ import {
 } from "react-query";
 import { ReactQueryDevtools } from "react-query/devtools";
 
-const queryClient = new QueryClient();
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      // staleTime: 99999999,
+    },
+  },
+});
 
 type Post = {
   userId: number;

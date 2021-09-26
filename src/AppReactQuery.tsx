@@ -1,4 +1,5 @@
 import React from "react";
+import { useToggle } from "react-use";
 import {
   QueryClient,
   QueryClientProvider,
@@ -12,6 +13,7 @@ const queryClient = new QueryClient({
   defaultOptions: {
     queries: {
       // staleTime: 99999999,
+      refetchOnWindowFocus: false,
     },
   },
 });
@@ -53,9 +55,11 @@ function Example() {
 }
 
 export default function App() {
+  const [show, toggleShow] = useToggle(true);
   return (
     <QueryClientProvider client={queryClient}>
-      <Example />
+      <button onClick={toggleShow}>Show: {show ? "true" : "false"}</button>
+      {show && <Example />}
       <ReactQueryDevtools />
     </QueryClientProvider>
   );

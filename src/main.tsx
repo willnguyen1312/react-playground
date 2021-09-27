@@ -11,7 +11,8 @@ import "./index.css";
 // import App from "./AppChildren";
 // import App from "./AppMemo";
 // import App from "./AppVideo";
-import App from "./AppReactQuery";
+// import App from "./AppReactQuery";
+import App from "./AppAccessibility";
 // import App from "./AppWebWorker";
 // import * as sample from "./sample";
 

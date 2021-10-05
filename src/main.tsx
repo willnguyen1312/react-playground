@@ -12,7 +12,9 @@ import "./index.css";
 // import App from "./AppMemo";
 // import App from "./AppVideo";
 // import App from "./AppReactQuery";
-import App from "./AppAccessibility";
+// import App from "./AppAccessibility";
+import App from "./JsonEditor";
+import { ChakraProvider } from "@chakra-ui/react";
 // import App from "./AppWebWorker";
 // import * as sample from "./sample";
 
@@ -25,7 +27,9 @@ import App from "./AppAccessibility";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <ChakraProvider>
+      <App />
+    </ChakraProvider>
   </React.StrictMode>,
   document.getElementById("root")
 );

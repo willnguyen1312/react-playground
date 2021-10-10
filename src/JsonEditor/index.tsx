@@ -75,7 +75,7 @@ export default function App() {
 
   return (
     <Flex direction="column" alignItems="center" mt={8}>
-      <Heading mb={4}>JSON:API Normalization</Heading>
+      <Heading mb={4}>JSON:API Normalization 🎉</Heading>
       <Flex alignItems="center">
         <Flex direction="column">
           <Box w="500px" h="600px" ref={leftJsonRef} />

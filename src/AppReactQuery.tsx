@@ -27,24 +27,30 @@ type Post = {
 
 function Example() {
   const queryClient = useQueryClient();
-  const response = useQuery<Post[]>(["post", { a: 1, b: 2 }], () => {
+  const { data = [] } = useQuery<Post[]>(["post", { a: 1, b: 2 }], () => {
     return fetch("https://jsonplaceholder.typicode.com/posts").then((res) =>
       res.json()
     );
   });
 
-  const mutation = useMutation(() =>
-    fetch("https://jsonplaceholder.typicode.com/posts", {
-      method: "post",
-    }).then((res) => res.json())
-  );
+  const mutation = useMutation(() => {
+    throw new Error("Oh no");
+    // return fetch("https://jsonplaceholder.typicode.com/posts", {
+    //   method: "post",
+    // }).then((res) => res.json());
+  });
 
   return (
     <div>
-      <h1>Example</h1>
+      <h1>Example: {data.length}</h1>
       <button
         onClick={async () => {
-          const result = await mutation.mutateAsync();
+          try {
+            const result = await mutation.mutateAsync();
+          } catch (error) {
+            console.log(error);
+          }
+
           queryClient.invalidateQueries(["post", { b: 2 }]);
         }}
       >

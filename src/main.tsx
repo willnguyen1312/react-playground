@@ -11,7 +11,9 @@ import "./index.css";
 // import App from "./AppChildren";
 // import App from "./AppMemo";
 // import App from "./AppVideo";
-import App from "./AppInput";
+// import App from "./AppI18n";
+import App from "./AppMitt";
+// import App from "./AppInput";
 // import App from "./AppReactQuery";
 // import App from "./AppAccessibility";
 // import App from "./JsonEditor";
@@ -28,7 +30,7 @@ import { ChakraProvider } from "@chakra-ui/react";
 
 ReactDOM.render(
   <React.StrictMode>
-    <ChakraProvider>
+    <ChakraProvider resetCSS={false}>
       <App />
     </ChakraProvider>
   </React.StrictMode>,

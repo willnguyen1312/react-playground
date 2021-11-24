@@ -30,8 +30,11 @@ function Basic(props) {
   ));
 
   return (
-    <section className="container">
-      <div {...getRootProps({ className: "dropzone" })}>
+    <section>
+      <div
+        {...getRootProps()}
+        style={{ border: "1px solid orange", paddingLeft: 20 }}
+      >
         <input {...getInputProps()} />
         <p>Drag 'n' drop some files here, or click to select files</p>
       </div>
@@ -59,24 +62,6 @@ export default function App() {
   return (
     <main style={{ padding: 20 }}>
       <Basic />
-      <input
-        aria-label="Hello Files"
-        type="file"
-        name="fileList"
-        // @ts-ignore
-        webkitdirectory="true"
-        onChange={handleChange}
-        multiple
-      />
-      <h3>Files</h3>
-
-      {files.length > 0 && (
-        <ul>
-          {files.map((file) => (
-            <li key={file.webkitRelativePath}>{file.webkitRelativePath}</li>
-          ))}
-        </ul>
-      )}
     </main>
   );
 }

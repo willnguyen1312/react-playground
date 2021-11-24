@@ -29,6 +29,7 @@ specifiers:
   react: ^17.0.2
   react-datepicker: ^4.2.1
   react-dom: ^17.0.2
+  react-dropzone: ^11.4.2
   react-i18next: ^11.12.0
   react-query: ^3.27.0
   react-use: ^17.3.1
@@ -59,6 +60,7 @@ dependencies:
   react: 17.0.2
   react-datepicker: 4.2.1_react-dom@17.0.2+react@17.0.2
   react-dom: 17.0.2_react@17.0.2
+  react-dropzone: 11.4.2_react@17.0.2
   react-i18next: 11.12.0_i18next@21.3.2+react@17.0.2
   react-query: 3.27.0_react-dom@17.0.2+react@17.0.2
   react-use: 17.3.1_react-dom@17.0.2+react@17.0.2
@@ -1594,6 +1596,11 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
+  /attr-accept/2.2.2:
+    resolution: {integrity: sha512-7prDjvt9HmqiZ0cl5CRjtS84sEyhsHP2coDkaZKRKVfCDo9s7iw7ChVmar78Gu9pC4SoR/28wFu/G5JJhTnqEg==}
+    engines: {node: '>=4'}
+    dev: false
+
   /axios/0.21.4:
     resolution: {integrity: sha512-ut5vewkiu8jjGBdqpM44XxjuCjq9LAKeHVmoVfHVzy8eHgxxq8SbAVQNovDA8mVi05kP0Ea/n/UzcSHcTJQfNg==}
     dependencies:
@@ -2019,6 +2026,13 @@ packages:
 
   /fastest-stable-stringify/2.0.2:
     resolution: {integrity: sha512-bijHueCGd0LqqNK9b5oCMHc0MluJAx0cwqASgbWMvkO01lCYgIhacVRLcaDz3QnyYIRNJRDwMb41VuT6pHJ91Q==}
+    dev: false
+
+  /file-selector/0.2.4:
+    resolution: {integrity: sha512-ZDsQNbrv6qRi1YTDOEWzf5J2KjZ9KMI1Q2SGeTkCJmNNW25Jg4TW4UMcmoqcg4WrAyKRcpBXdbWRxkfrOzVRbA==}
+    engines: {node: '>= 10'}
+    dependencies:
+      tslib: 2.3.0
     dev: false
 
   /find-root/1.1.0:
@@ -2575,6 +2589,18 @@ packages:
       object-assign: 4.1.1
       react: 17.0.2
       scheduler: 0.20.2
+    dev: false
+
+  /react-dropzone/11.4.2_react@17.0.2:
+    resolution: {integrity: sha512-ocYzYn7Qgp0tFc1gQtUTOaHHSzVTwhWHxxY+r7cj2jJTPfMTZB5GWSJHdIVoxsl+EQENpjJ/6Zvcw0BqKZQ+Eg==}
+    engines: {node: '>= 10'}
+    peerDependencies:
+      react: '>= 16.8'
+    dependencies:
+      attr-accept: 2.2.2
+      file-selector: 0.2.4
+      prop-types: 15.7.2
+      react: 17.0.2
     dev: false
 
   /react-fast-compare/3.2.0:

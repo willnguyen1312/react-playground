@@ -1,6 +1,16 @@
 import React, { useEffect, useState } from "react";
 
 function App() {
+  useEffect(() => {
+    window.document.addEventListener("mouseenter", () => {
+      console.log("mouseenter");
+    });
+
+    window.document.addEventListener("mouseleave", () => {
+      console.log("mouseleave");
+    });
+  }, []);
+
   const calculateTimeLeft = () => {
     let year = new Date().getFullYear();
     const difference = +new Date(`${year}-10-1`) - +new Date();
@@ -35,7 +45,7 @@ function App() {
     }
 
     timerComponents.push(
-      <span>
+      <span key={interval}>
         {timeLeft[interval]} {interval}{" "}
       </span>
     );

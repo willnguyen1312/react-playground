@@ -44,7 +44,7 @@ function Basic(props) {
 
   const decodedFiles = encodedFiles.map((file) => ({
     folderPath: file.folderPath.map(decodeURIComponent),
-    name: file.fileName,
+    fileName: file.fileName,
   }));
 
   return (

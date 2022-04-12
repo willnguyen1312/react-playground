@@ -62,7 +62,7 @@ function Basic(props) {
         <ul>{files}</ul>
 
         <h4>Encoded Files</h4>
-        <pre>{JSON.stringify(decodedFiles)}</pre>
+        <pre>{JSON.stringify(encodedFiles)}</pre>
 
         <h4>Decoded Files</h4>
         <pre>{JSON.stringify(decodedFiles)}</pre>

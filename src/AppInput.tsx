@@ -33,7 +33,7 @@ function Basic(props) {
     const { path } = file;
     const paths = path
       .split("/")
-      .map((item) => encodeURIComponent(item.replace(/:/g, "/")));
+      .map((item: string) => encodeURIComponent(item.replace(/:/g, "/")));
 
     const folderPath = paths.slice(1, paths.length - 1);
     return {

@@ -29,7 +29,7 @@ function Basic(props) {
     </li>
   ));
 
-  const decodedFiles = acceptedFiles.map((file: any) => {
+  const encodedFiles = acceptedFiles.map((file: any) => {
     const { path } = file;
     const paths = path
       .split("/")
@@ -42,7 +42,7 @@ function Basic(props) {
     };
   });
 
-  const encodedFiles = decodedFiles.map((file) => ({
+  const decodedFiles = encodedFiles.map((file) => ({
     folderPath: file.folderPath.map(decodeURIComponent),
     name: file.fileName,
   }));
@@ -62,7 +62,7 @@ function Basic(props) {
         <ul>{files}</ul>
 
         <h4>Encoded Files</h4>
-        <pre>{JSON.stringify(encodedFiles)}</pre>
+        <pre>{JSON.stringify(decodedFiles)}</pre>
 
         <h4>Decoded Files</h4>
         <pre>{JSON.stringify(decodedFiles)}</pre>

@@ -29,6 +29,24 @@ function Basic(props) {
     </li>
   ));
 
+  const decodedFiles = acceptedFiles.map((file: any) => {
+    const { path } = file;
+    const paths = path
+      .split("/")
+      .map((item) => encodeURIComponent(item.replace(/:/g, "/")));
+
+    const folderPath = paths.slice(1, paths.length - 1);
+    return {
+      folderPath,
+      fileName: paths[paths.length - 1],
+    };
+  });
+
+  const encodedFiles = decodedFiles.map((file) => ({
+    folderPath: file.folderPath.map(decodeURIComponent),
+    name: file.fileName,
+  }));
+
   return (
     <section>
       <div
@@ -40,25 +58,20 @@ function Basic(props) {
       </div>
       <aside>
         <h3>Number of folders: {numberOfFolders.size}</h3>
-        <h4>Files</h4>
+        <h4>Raw Files</h4>
         <ul>{files}</ul>
+
+        <h4>Encoded Files</h4>
+        <pre>{JSON.stringify(encodedFiles)}</pre>
+
+        <h4>Decoded Files</h4>
+        <pre>{JSON.stringify(decodedFiles)}</pre>
       </aside>
     </section>
   );
 }
 
 export default function App() {
-  const [files, setFiles] = useState<File[]>([]);
-
-  const handleChange = (event) => {
-    let files = event.target.files;
-
-    if (files) {
-      const newFiles: any = Array.from(files);
-      setFiles(newFiles);
-    }
-  };
-
   return (
     <main style={{ padding: 20 }}>
       <Basic />
